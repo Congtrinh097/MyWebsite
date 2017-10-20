@@ -29,6 +29,22 @@ namespace Base.Controllers
             return View();
         }
 
+        public IActionResult Error404()
+        {
+            return View("404");
+        }
+
+
+        public IActionResult Blog()
+        {
+            return View();
+        }
+
+        public IActionResult SingleBlog()
+        {
+            return View();
+        }
+
         public IActionResult Error()
         {
             ViewData["RequestId"] = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
