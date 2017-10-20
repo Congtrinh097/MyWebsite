@@ -10,6 +10,7 @@
   <ItemGroup>
     <PackageReference Include="jose-jwt" Version="2.4.0" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -39,6 +40,26 @@
     <None Include="wwwroot\assets\js\slick.min.js" />
     <None Include="wwwroot\assets\plugins\forms\validation\additional-methods.min.js" />
     <None Include="wwwroot\assets\plugins\forms\validation\jquery.validate.js" />
+    <None Include="wwwroot\frontend-asset\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\frontend-asset\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\frontend-asset\inc\custom-slider\home.js" />
+    <None Include="wwwroot\frontend-asset\inc\custom-slider\js\jquery.nivo.slider.js" />
+    <None Include="wwwroot\frontend-asset\inc\fancybox\jquery.fancybox.pack.js" />
+    <None Include="wwwroot\frontend-asset\js\bootstrap.min.js" />
+    <None Include="wwwroot\frontend-asset\js\isotope.pkgd.min.js" />
+    <None Include="wwwroot\frontend-asset\js\jquery-ui.min.js" />
+    <None Include="wwwroot\frontend-asset\js\jquery.bxslider.min.js" />
+    <None Include="wwwroot\frontend-asset\js\jquery.counterup.min.js" />
+    <None Include="wwwroot\frontend-asset\js\jquery.meanmenu.js" />
+    <None Include="wwwroot\frontend-asset\js\jquery.nice-select.min.js" />
+    <None Include="wwwroot\frontend-asset\js\main.js" />
+    <None Include="wwwroot\frontend-asset\js\owl.carousel.min.js" />
+    <None Include="wwwroot\frontend-asset\js\plugins.js" />
+    <None Include="wwwroot\frontend-asset\js\slick.min.js" />
+    <None Include="wwwroot\frontend-asset\js\vendor\jquery-1.12.0.min.js" />
+    <None Include="wwwroot\frontend-asset\js\vendor\modernizr-2.8.3.min.js" />
+    <None Include="wwwroot\frontend-asset\js\waypoints.min.js" />
+    <None Include="wwwroot\frontend-asset\js\wow.min.js" />
   </ItemGroup>
 
   <ItemGroup>

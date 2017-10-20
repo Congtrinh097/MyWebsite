@@ -1,0 +1,83 @@
+﻿
+@{
+    ViewData["Title"] = "Contact";
+    Layout = "~/Views/Shared/_LayoutFrontend.cshtml";
+}
+
+<!-- Contact Page Start Here -->
+<div class="contact-page-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div id="map" style="height:380px;width:100%"></div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="contact-form">
+                    <form>
+                        <fieldset>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name*">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="E-mail*">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="You Phone*">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Subject*">
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <textarea cols="40" rows="7" class="textarea form-control" placeholder="Your Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <a class="button btn btn-danger btn-lg">Send Us</a>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="contact-info">
+                <div class="col-sm-4 text-center">
+                    <div class="single-contact">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <h3>Contact Number</h3>
+                        <p> + 088-555-888-55</p>
+                        <p>+ 088-555-888-55</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <div class="single-contact">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <h3>Email Address</h3>
+                        <p>info@gmail.com</p>
+                        <p>www.carpress.com</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <div class="single-contact">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <h3>Official Address</h3>
+                        <p>Iner circular road, 24</p>
+                        <p>512, North America.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact Page End Here -->

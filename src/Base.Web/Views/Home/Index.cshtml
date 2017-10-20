@@ -1,9 +1,939 @@
-@{
-    ViewData["Title"] = "Home Page";
+@{ 
+     ViewData["Title"] = "Home";
+    Layout = "~/Views/Shared/_LayoutFrontend.cshtml";
 }
-
-<div id="react-app" >Loading...</div>
-
-@section scripts {
-    <script src="~/dist/main-client.js" asp-append-version="true"></script>
-}
+    <!-- Slider Area-->
+    <div class="slider-area">
+        <div class="bend niceties preview-2">
+            <div id="ensign-nivoslider" class="slides">
+                <img src="frontend-asset/images/slider/1.jpg" alt="" title="#slider-direction-1" />
+                <img src="frontend-asset/images/slider/2.jpg" alt="" title="#slider-direction-2" />
+                <img src="frontend-asset/images/slider/3.jpg" alt="" title="#slider-direction-3" />
+            </div>
+            <!-- direction 2 -->
+            <div id="slider-direction-1" class="slider-direction">
+                <div class="slider-content t-cn s-tb slider-2">
+                    <div class="title-container s-tb-c">
+                        <div class="title2">We are offering the</div>
+                        <h1 class="title1">Best <span>Real Estate</span>  Deals</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Proin tellus elit ultricies at semper consectetur felis. Fusce eget ligula ut libero placerat tempor vulputate. </p>
+                        <div class="slider-botton">
+                            <ul>
+                                <li class="acitve"><a class="button btn btn-danger btn-lg" href="#">About Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- direction 2 -->
+            <div id="slider-direction-2" class="slider-direction">
+                <div class="slider-content t-cn s-tb slider-2">
+                    <div class="title-container s-tb-c">
+                        <h1 class="title1">Find Your <span>Dream</span> House</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Proin tellus elit ultricies at semper consectetur felis. Fusce eget ligula ut libero placerat tempor vulputate.</p>
+                        <div class="slider-botton">
+                            <ul>
+                                <li class="acitve"><a class="button btn btn-danger btn-lg" href="#">Read More</a></li>
+                                <li><a class="button btn btn-danger btn-lg" href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- direction 2 -->
+            <div id="slider-direction-3" class="slider-direction">
+                <div class="slider-content t-cn s-tb slider-2">
+                    <div class="title-container s-tb-c">
+                        <div class="title2">We are helping you</div>
+                        <h1 class="title1">To Find Your<span> Dream Home</span></h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem aperiam recusandae corporis molestiae eum quaerat unde similique officiis debitis maxime ut ea.</p>
+                        <div class="slider-botton">
+                            <ul>
+                                <li class="acitve"><a class="button btn btn-danger btn-lg" href="#">Learn More</a></li>
+                                <li><a class="button btn btn-danger btn-lg" href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slider End-->
+    <!-- Find Your Home Start Here -->
+    <div class="find-your-home-area">
+        <div class="container">
+            <div class="row">
+                <div class="info-form">
+                    <h2>Find Your Dream Home</h2>
+                    <form>
+                        <div class="form-fields">
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                <div class="single-field">
+                                    <p>Max Of Bedrooms</p>
+                                    <div class="input-box">
+                                        <select>
+                                            <option value="" selected="selected">Select Bedrooms</option>
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                            <option value="">5</option>
+                                            <option value="">6</option>
+                                            <option value="">7</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                <div class="single-field">
+                                    <p>Max Of Bathrooms</p>
+                                    <div class="input-box">
+                                        <select>
+                                            <option value="" selected="selected">Select Bathrooms</option>
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                            <option value="">5</option>
+                                            <option value="">6</option>
+                                            <option value="">7</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                <div class="single-field">
+                                    <p>Min Area(Sqft)</p>
+                                    <div class="input-box">
+                                        <select>
+                                            <option value="" selected="selected">Select Min Area</option>
+                                            <option value="">100 Sqft</option>
+                                            <option value="">150 Sqft</option>
+                                            <option value="">200 Sqft</option>
+                                            <option value="">250 Sqft</option>
+                                            <option value="">300 Sqft</option>
+                                            <option value="">350 Sqft</option>
+                                            <option value="">400 Sqft</option>
+                                            <option value="">450 Sqft</option>
+                                            <option value="">500 Sqft</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                <div class="single-field">
+                                    <p>Max Area(Sqft)</p>
+                                    <div class="input-box">
+                                        <select>
+                                            <option value="" selected="selected">Select Max Area</option>
+                                            <option value="">200 Sqft</option>
+                                            <option value="">250 Sqft</option>
+                                            <option value="">300 Sqft</option>
+                                            <option value="">350 Sqft</option>
+                                            <option value="">400 Sqft</option>
+                                            <option value="">450 Sqft</option>
+                                            <option value="">500 Sqft</option>
+                                            <option value="">550 Sqft</option>
+                                            <option value="">600 Sqft</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                <div class="single-field">
+                                    <p>Property Type</p>
+                                    <div class="input-box">
+                                        <select>
+                                            <option value="" selected="selected">Select Property Type</option>
+                                            <option value="">Apartment</option>
+                                            <option value="">Flat</option>
+                                            <option value="">House</option>
+                                            <option value="">Condominium</option>
+                                            <option value="">Cottage</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                <div class="single-field">
+                                    <p>Room Type</p>
+                                    <div class="input-box">
+                                        <select>
+                                            <option value="" selected="selected">Select Room Type</option>
+                                            <option value="">Single Room</option>
+                                            <option value="">Double Room</option>
+                                            <option value="">Deluxe Single Room</option>
+                                            <option value="">Deluxe Double Room</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                <!-- shop-filter start -->
+                                <div class="single-field">
+                                    <p>Priceing Range</p>
+                                    <div id="slider-range"></div>
+                                    <div class="price-area">
+                                        <input type="text" id="amount">
+                                    </div>
+                                </div>
+                                <!-- shop-filter end -->
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                <div class="read-more">
+                                    <a class="button btn btn-danger btn-lg" href="#">Search</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="shadow text-center">
+                    <img src="frontend-asset/images/shadow.png" alt="shadow">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Find Your Home End Here -->
+    <!-- Feature Property Area Start Here -->
+    <div class="feature-property-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="section-title">
+                        <h2>Feature <span>Property</span></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis laborum, veniam, eius, incidunt laudantium illo inventore deserunt explicabo consequuntur vero illum aut perspiciatis nesciunt sit, rem! Temporibus laborum, atque eveniet!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="property-menu">
+                        <ul>
+                            <li data-filter="*">All</li>
+                            <li data-filter=".office">Office</li>
+                            <li data-filter=".apartment">Apartment</li>
+                            <li data-filter=".house">House</li>
+                            <li data-filter=".residential">Residential</li>
+                            <li data-filter=".rent">Rent</li>
+                            <li data-filter=".sale">Sale</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="grid">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 grid-item office">
+                        <div class="single-property">
+                            <div class="images">
+                                <img src="frontend-asset/images/property/1.jpg" alt="">
+                                <div class="icons-area">
+                                    <ul>
+                                        <li><a class="fancybox" href="frontend-asset/images/property/1.jpg" data-fancybox-group="gallery" title="Image Name Here"><i class="fa fa-plus" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                                <span>Sale</span>
+                            </div>
+                            <div class="property-details">
+                                <h3><a href="property-details.html">Meridian Villas <img src="frontend-asset/images/property/star.png" alt=""></a></h3>
+                                <p>$990,000</p>
+                                <span><i class="fa fa-map-marker"></i> Unite State / South Dokota</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 grid-item apartment sale residential">
+                        <div class="single-property">
+                            <div class="images">
+                                <img src="frontend-asset/images/property/2.jpg" alt="">
+                                <div class="icons-area">
+                                    <ul>
+                                        <li><a class="fancybox" href="frontend-asset/images/property/2.jpg" data-fancybox-group="gallery" title="Image Name Here"><i class="fa fa-plus" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                                <span>Rent</span>
+                            </div>
+                            <div class="property-details">
+                                <h3><a href="property-details.html">Masons Villas <img src="frontend-asset/images/property/star.png" alt=""></a></h3>
+                                <p>$550,000</p>
+                                <span><i class="fa fa-map-marker"></i> Australia / South Vellly</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 grid-item house office">
+                        <div class="single-property">
+                            <div class="images">
+                                <img src="frontend-asset/images/property/3.jpg" alt="">
+                                <div class="icons-area">
+                                    <ul>
+                                        <li><a class="fancybox" href="frontend-asset/images/property/3.jpg" data-fancybox-group="gallery" title="Image Name Here"><i class="fa fa-plus" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="property-details">
+                                <h3><a href="property-details.html">Park Avenue <img src="frontend-asset/images/property/star.png" alt=""></a></h3>
+                                <p>$950,000</p>
+                                <span><i class="fa fa-map-marker"></i> 123 Kathal St. Tampa City</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 grid-item residential apartment">
+                        <div class="single-property">
+                            <div class="images">
+                                <img src="frontend-asset/images/property/4.jpg" alt="">
+                                <div class="icons-area">
+                                    <ul>
+                                        <li><a class="fancybox" href="frontend-asset/images/property/4.jpg" data-fancybox-group="gallery" title="Image Name Here"><i class="fa fa-plus" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                                <span>Sale</span>
+                            </div>
+                            <div class="property-details">
+                                <h3><a href="property-details.html">Meridian Villas <img src="frontend-asset/images/property/star.png" alt=""></a></h3>
+                                <p>$990,000</p>
+                                <span><i class="fa fa-map-marker"></i> Unite State / South Dokota</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 grid-item rent house">
+                        <div class="single-property">
+                            <div class="images">
+                                <img src="frontend-asset/images/property/5.jpg" alt="">
+                                <div class="icons-area">
+                                    <ul>
+                                        <li><a class="fancybox" href="frontend-asset/images/property/5.jpg" data-fancybox-group="gallery" title="Image Name Here"><i class="fa fa-plus" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="property-details">
+                                <h3><a href="property-details.html">Masons Villas <img src="frontend-asset/images/property/star.png" alt=""></a></h3>
+                                <p>$550,000</p>
+                                <span><i class="fa fa-map-marker"></i> Australia / South Vellly</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 grid-item sale residential">
+                        <div class="single-property">
+                            <div class="images">
+                                <img src="frontend-asset/images/property/6.jpg" alt="">
+                                <div class="icons-area">
+                                    <ul>
+                                        <li><a class="fancybox" href="frontend-asset/images/property/6.jpg" data-fancybox-group="gallery" title="Image Name Here"><i class="fa fa-plus" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                                <span>Rent</span>
+                            </div>
+                            <div class="property-details">
+                                <h3><a href="property-details.html">Park Avenue <img src="frontend-asset/images/property/star.png" alt=""></a></h3>
+                                <p>$950,000</p>
+                                <span><i class="fa fa-map-marker"></i> 123 Kathal St. Tampa City</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 grid-item office sale house">
+                        <div class="single-property">
+                            <div class="images">
+                                <img src="frontend-asset/images/property/7.jpg" alt="">
+                                <div class="icons-area">
+                                    <ul>
+                                        <li><a class="fancybox" href="frontend-asset/images/property/7.jpg" data-fancybox-group="gallery" title="Image Name Here"><i class="fa fa-plus" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                                <span>Sale</span>
+                            </div>
+                            <div class="property-details">
+                                <h3><a href="property-details.html">Meridian Villas <img src="frontend-asset/images/property/star.png" alt=""></a></h3>
+                                <p>$990,000</p>
+                                <span><i class="fa fa-map-marker"></i> Unite State / South Dokota</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 grid-item rent">
+                        <div class="single-property">
+                            <div class="images">
+                                <img src="frontend-asset/images/property/8.jpg" alt="">
+                                <div class="icons-area">
+                                    <ul>
+                                        <li><a class="fancybox" href="frontend-asset/images/property/8.jpg" data-fancybox-group="gallery" title="Image Name Here"><i class="fa fa-plus" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                                <span>Rent</span>
+                            </div>
+                            <div class="property-details">
+                                <h3><a href="property-details.html">Masons Villas <img src="frontend-asset/images/property/star.png" alt=""></a></h3>
+                                <p>$550,000</p>
+                                <span><i class="fa fa-map-marker"></i> Australia / South Vellly</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 grid-item apartment rent">
+                        <div class="single-property">
+                            <div class="images">
+                                <img src="frontend-asset/images/property/9.jpg" alt="">
+                                <div class="icons-area">
+                                    <ul>
+                                        <li><a class="fancybox" href="frontend-asset/images/property/9.jpg" data-fancybox-group="gallery" title="Image Name Here"><i class="fa fa-plus" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                                <span>Rent</span>
+                            </div>
+                            <div class="property-details">
+                                <h3><a href="property-details.html">Park Avenue <img src="frontend-asset/images/property/star.png" alt=""></a></h3>
+                                <p>$950,000</p>
+                                <span><i class="fa fa-map-marker"></i> 123 Kathal St. Tampa City</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature Property Area End Here -->
+    <!-- Amazing Features Start Here -->
+    <div class="amazing-features-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="feature-content">
+                        <h2 class="wow fadeInDown" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInDown;"><span>Amazing</span> Features</h2>
+                        <div class="feature-list wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                            <ul>
+                                <li>
+                                    <h3><i class="fa fa-television" aria-hidden="true"></i> Living Inside a Nature</h3>
+                                    <p>Real Homes theme provides various templates to fulfill the needs of real estate agents and agencies. Sequi, alias repellat quod corporis minima, beatae odio tempore.</p>
+                                </li>
+                                <li>
+                                    <h3><i class="fa fa-home" aria-hidden="true"></i> Royal Touch Paint</h3>
+                                    <p>Real Homes theme provides various templates to fulfill the needs of real estate agents and agencies. Sequi, alias repellat quod corporis minima, beatae odio tempore.</p>
+                                </li>
+                                <li>
+                                    <h3><i class="fa fa-home" aria-hidden="true"></i> Royal Touch Paint</h3>
+                                    <p>Real Homes theme provides various templates to fulfill the needs of real estate agents and agencies. Sequi, alias repellat quod corporis minima, beatae odio tempore.</p>
+                                </li>
+                                <li>
+                                    <h3><i class="fa fa-sliders" aria-hidden="true"></i> Luxurious Fittings</h3>
+                                    <p>Real Homes theme provides various templates to fulfill the needs of real estate agents and agencies. Sequi, alias repellat quod corporis minima, beatae odio tempore.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
+                    <div class="feature-image wow fadeInRight" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
+                        <img src="frontend-asset/images/feature/woman.png" alt="women image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Amazing Features End Here -->
+    <!-- Recent Property Area Start Here -->
+    <div class="recent-property-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="section-title">
+                        <h2>Recent <span>Property</span></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis laborum, veniam, eius, incidunt laudantium illo inventore deserunt explicabo consequuntur vero illum aut perspiciatis nesciunt sit, rem! Temporibus laborum, atque eveniet!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="property-slider">
+                    <div class="single-property">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="property-images">
+                                    <img src="frontend-asset/images/property/12.jpg" alt="">
+                                    <div class="icons-area">
+                                        <ul>
+                                            <li><a class="fancybox" href="frontend-asset/images/property/12.jpg" data-fancybox-group="gallery" title="Image Name Here"><i class="fa fa-plus" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="content-property">
+                                    <h3><a href="property-details.html">Interior design boundary</a></h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac volutpat dolor. Phasellus et risus ut tortor molestie maximus. Nulla lacinia mi sit amet consectetur scelerisque. Nulla vitae tortor vel mauris porttitor sodales.</p>
+                                    <span>$65,000/month</span>
+                                    <a href="property-details.html">Read More...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="content-property">
+                                    <h3><a href="property-details.html">Interior design boundary</a></h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac volutpat dolor. Phasellus et risus ut tortor molestie maximus. Nulla lacinia mi sit amet consectetur scelerisque. Nulla vitae tortor vel mauris porttitor sodales.</p>
+                                    <span>$45,000/month</span>
+                                    <a href="property-details.html">Read More...</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="property-images">
+                                    <img src="frontend-asset/images/property/13.jpg" alt="">
+                                    <div class="icons-area">
+                                        <ul>
+                                            <li><a class="fancybox" href="frontend-asset/images/property/13.jpg" data-fancybox-group="gallery" title="Image Name Here"><i class="fa fa-plus" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-property">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="property-images">
+                                    <a class="fancybox" href="frontend-asset/images/property/12.jpg" data-fancybox-group="gallery" title="Image Name Here"><img src="frontend-asset/images/property/12.jpg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="content-property">
+                                    <h3><a href="property-details.html">Interior design boundary</a></h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac volutpat dolor. Phasellus et risus ut tortor molestie maximus. Nulla lacinia mi sit amet consectetur scelerisque. Nulla vitae tortor vel mauris porttitor sodales.</p>
+                                    <a href="property-details.html">Read More...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="content-property">
+                                    <h3><a href="property-details.html">Interior design boundary</a></h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac volutpat dolor. Phasellus et risus ut tortor molestie maximus. Nulla lacinia mi sit amet consectetur scelerisque. Nulla vitae tortor vel mauris porttitor sodales.</p>
+                                    <a href="property-details.html">Read More...</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="property-images">
+                                    <a class="fancybox" href="frontend-asset/images/property/13.jpg" data-fancybox-group="gallery" title="Image Name Here"><img src="frontend-asset/images/property/13.jpg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Recent Property Area End Here -->
+    <!-- Real Estate Agent Area Start Here -->
+    <div class="real-estate-agent-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="section-title">
+                        <h2>Real Estate <span>Agent</span></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis laborum, veniam, eius, incidunt laudantium illo inventore deserunt explicabo consequuntur vero illum aut perspiciatis nesciunt sit, rem! Temporibus laborum, atque eveniet!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="agent-slider">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="single-agent">
+                            <div class="images">
+                                <div class="image-frame">
+                                    <img src="frontend-asset/images/agent/1.jpg" alt="">
+                                </div>
+                                <a href="agent-details.html"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="agent-details">
+                                <h3> <a href="agent-details.html">Jack Mark</a></h3>
+                                <span>Founder, Real Estate</span>
+                                <div class="social-media">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="single-agent">
+                            <div class="images">
+                                <div class="image-frame">
+                                    <img src="frontend-asset/images/agent/2.jpg" alt="">
+                                </div>
+                                <a href="agent-details.html"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="agent-details">
+                                <h3> <a href="agent-details.html">Robert John</a></h3>
+                                <span>Manage, Real Estate</span>
+                                <div class="social-media">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="single-agent">
+                            <div class="images">
+                                <div class="image-frame">
+                                    <img src="frontend-asset/images/agent/3.jpg" alt="">
+                                </div>
+                                <a href="agent-details.html"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="agent-details">
+                                <h3> <a href="agent-details.html">Austin Brown</a></h3>
+                                <span>Agent, Real Estate</span>
+                                <div class="social-media">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="single-agent">
+                            <div class="images">
+                                <div class="image-frame">
+                                    <img src="frontend-asset/images/agent/4.jpg" alt="">
+                                </div>
+                                <a href="agent-details.html"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="agent-details">
+                                <h3> <a href="agent-details.html">Brad David</a></h3>
+                                <span>Founder, Real Estate</span>
+                                <div class="social-media">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="single-agent">
+                            <div class="images">
+                                <div class="image-frame">
+                                    <img src="frontend-asset/images/agent/1.jpg" alt="">
+                                </div>
+                                <a href="agent-details.html"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="agent-details">
+                                <h3> <a href="agent-details.html">Jack Mark</a></h3>
+                                <span>Founder, Real Estate</span>
+                                <div class="social-media">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="single-agent">
+                            <div class="images">
+                                <div class="image-frame">
+                                    <img src="frontend-asset/images/agent/2.jpg" alt="">
+                                </div>
+                                <a href="agent-details.html"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="agent-details">
+                                <h3> <a href="agent-details.html">Robert John</a></h3>
+                                <span>Manage, Real Estate</span>
+                                <div class="social-media">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="single-agent">
+                            <div class="images">
+                                <div class="image-frame">
+                                    <img src="frontend-asset/images/agent/3.jpg" alt="">
+                                </div>
+                                <a href="agent-details.html"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="agent-details">
+                                <h3> <a href="agent-details.html">Austin Brown</a></h3>
+                                <span>Agent, Real Estate</span>
+                                <div class="social-media">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="single-agent">
+                            <div class="images">
+                                <div class="image-frame">
+                                    <img src="frontend-asset/images/agent/4.jpg" alt="">
+                                </div>
+                                <a href="agent-details.html"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="agent-details">
+                                <h3> <a href="agent-details.html">Brad David</a></h3>
+                                <span>Founder, Real Estate</span>
+                                <div class="social-media">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="single-agent">
+                            <div class="images">
+                                <div class="image-frame">
+                                    <img src="frontend-asset/images/agent/1.jpg" alt="">
+                                </div>
+                                <a href="agent-details.html"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="agent-details">
+                                <h3> <a href="agent-details.html">Jack Mark</a></h3>
+                                <span>Founder, Real Estate</span>
+                                <div class="social-media">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="single-agent">
+                            <div class="images">
+                                <div class="image-frame">
+                                    <img src="frontend-asset/images/agent/2.jpg" alt="">
+                                </div>
+                                <a href="agent-details.html"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="agent-details">
+                                <h3> <a href="agent-details.html">Robert John</a></h3>
+                                <span>Manage, Real Estate</span>
+                                <div class="social-media">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="single-agent">
+                            <div class="images">
+                                <div class="image-frame">
+                                    <img src="frontend-asset/images/agent/3.jpg" alt="">
+                                </div>
+                                <a href="agent-details.html"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="agent-details">
+                                <h3> <a href="agent-details.html">Austin Brown</a></h3>
+                                <span>Agent, Real Estate</span>
+                                <div class="social-media">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="single-agent">
+                            <div class="images">
+                                <div class="image-frame">
+                                    <img src="frontend-asset/images/agent/4.jpg" alt="">
+                                </div>
+                                <a href="agent-details.html"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="agent-details">
+                                <h3> <a href="agent-details.html">Brad David</a></h3>
+                                <span>Founder, Real Estate</span>
+                                <div class="social-media">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="single-agent">
+                            <div class="images">
+                                <div class="image-frame">
+                                    <img src="frontend-asset/images/agent/1.jpg" alt="">
+                                </div>
+                                <a href="agent-details.html"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="agent-details">
+                                <h3> <a href="agent-details.html">Jack Mark</a></h3>
+                                <span>Founder, Real Estate</span>
+                                <div class="social-media">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="single-agent">
+                            <div class="images">
+                                <div class="image-frame">
+                                    <img src="frontend-asset/images/agent/2.jpg" alt="">
+                                </div>
+                                <a href="agent-details.html"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="agent-details">
+                                <h3> <a href="agent-details.html">Robert John</a></h3>
+                                <span>Manage, Real Estate</span>
+                                <div class="social-media">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="single-agent">
+                            <div class="images">
+                                <div class="image-frame">
+                                    <img src="frontend-asset/images/agent/3.jpg" alt="">
+                                </div>
+                                <a href="agent-details.html"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="agent-details">
+                                <h3> <a href="agent-details.html">Austin Brown</a></h3>
+                                <span>Agent, Real Estate</span>
+                                <div class="social-media">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="single-agent">
+                            <div class="images">
+                                <div class="image-frame">
+                                    <img src="frontend-asset/images/agent/4.jpg" alt="">
+                                </div>
+                                <a href="agent-details.html"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="agent-details">
+                                <h3> <a href="agent-details.html">Brad David</a></h3>
+                                <span>Founder, Real Estate</span>
+                                <div class="social-media">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Real Estate Agent Area End Here -->
+    <!-- Testimonial Start Here -->
+    <div class="testimonial-area">
+        <div class="container">
+            <div class="row">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <div class="section-title">
+                            <h2>What <span>Client</span> Say</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="client-content">
+                                <blockquote>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Duis ac volutpat dolor. Phasellus et risus ut tortor molestie maximus. Nulla lacinia mi sit amet consectetur scelerisque. Nulla vitae tortor vel mauris porttitor sodales. </p>
+                                </blockquote>
+                                <blockquote>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Duis ac volutpat dolor. Phasellus et risus ut tortor molestie maximus. Nulla lacinia mi sit amet consectetur scelerisque. Nulla vitae tortor vel mauris porttitor sodales. </p>
+                                </blockquote>
+                                <blockquote>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Duis ac volutpat dolor. Phasellus et risus ut tortor molestie maximus. Nulla lacinia mi sit amet consectetur scelerisque. Nulla vitae tortor vel mauris porttitor sodales. </p>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="client-img text-center">
+                                <a data-slide-index="0" href="">
+                                    <div class="over-img"><img src="frontend-asset/images/testimonial/2.png" alt="" /></div>
+                                    <h4>John Deo</h4>
+                                    <p>CEO, Real Estate</p>
+                                </a>
+                                <a data-slide-index="1" href="">
+                                    <div class="over-img"><img src="frontend-asset/images/testimonial/3.png" alt="" /></div>
+                                    <h4>Robert Von</h4>
+                                    <p>Agency</p>
+                                </a>
+                                <a data-slide-index="2" href="">
+                                    <div class="over-img"><img src="frontend-asset/images/testimonial/4.png" alt="" /></div>
+                                    <h4>Brad Rert</h4>
+                                    <p>Manager</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End Here -->
+    
