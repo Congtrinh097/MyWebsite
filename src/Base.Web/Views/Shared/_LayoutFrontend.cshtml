@@ -1,6 +1,7 @@
 ﻿@{
     Layout = null;
 }
+@model Base.Web.Models.LoginViewModel
 
 <!doctype html>
 <html class="no-js" lang="">
@@ -170,12 +171,12 @@
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
                         <div class="submit-property">
-                            <a class="button btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal">Submit property</a>
+                            <a class="button btn btn-danger btn-lg" href="~/Account/login" >Login</a>
                         </div>
                     </div>
                 </div>
                 <!-- Modal -->
-                <div class="modal fade" id="myModal" role="dialog">
+                @*<div class="modal fade" id="myModal" role="dialog">
                     <div class="modal-dialog">
                         <!-- Modal content-->
                         <div class="modal-content">
@@ -190,41 +191,45 @@
                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                                 <div class="login-area">
                                                     <h2>Login</h2>
-                                                    <form>
+                                                    
+                                                    <form asp-action="login" asp-controller="account" method="post" id="login-form" role="form">
                                                         <fieldset>
-                                                            <div class="col-sm-12">
-                                                                <div class="form-group">
-                                                                    <label>User Name </label>
-                                                                    <input type="text" class="form-control">
+                              
+                                                                <div class="col-sm-12">
+                                                                    <div class="form-group">
+                                                                        <label>User Name </label>
+
+                                                                        @Html.TextBoxFor(x => x.UserName, "", new { type = "text", @class = "form-control", placeholder = "User Name" })
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="col-sm-12">
-                                                                <div class="form-group">
-                                                                    <label>Password</label>
-                                                                    <input type="email" class="form-control">
+                                                                <div class="col-sm-12">
+                                                                    <div class="form-group">
+                                                                        <label>Password</label>
+                                                                        @Html.TextBoxFor(x => x.Password, "", new { type = "password", @class = "form-control", placeholder = "Password" })
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="col-sm-12">
-                                                                <div class="form-group">
-                                                                    <div class="connected-area">
-                                                                        <div class="checkbox">
-                                                                            <label>
-                                                                                <input type="checkbox">Remember me
-                                                                            </label>
-                                                                            <p><a href="#">Lost your password?</a></p>
+                                                                <div class="col-sm-12">
+                                                                    <div class="form-group">
+                                                                        <div class="connected-area">
+                                                                            <div class="checkbox">
+                                                                                <label>
+                                                                                    <input type="checkbox">Remember me
+                                                                                </label>
+                                                                                <p><a href="#">Lost your password?</a></p>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="col-sm-12">
-                                                                <div class="form-group">
-                                                                    <ul>
-                                                                        <li><a class="button btn btn-danger btn-lg">Login</a></li>
-                                                                        <li><a class="button btn btn-danger btn-lg">Signup</a></li>
-                                                                    </ul>
+                                                                <div class="col-sm-12">
+                                                                    <div class="form-group">
+                                                                        <ul>
+                                                                            <li>
+                                                                                <button class="button btn btn-danger btn-lg" type="submit">Login</button>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                        </fieldset>
+</fieldset>
                                                     </form>
                                                 </div>
                                             </div>
@@ -238,7 +243,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>*@
             </div>
         </div>
         <!-- mobile-menu-area start -->

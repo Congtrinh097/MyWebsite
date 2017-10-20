@@ -2,11 +2,11 @@
    Custom.css - put your own changes here 
 ----------------------------------------- */
 .login-page {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(/images/login-background.jpg);
-  position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../../frontend-asset/images/slider/2.jpg');
+    position: relative;
 }
 
 .login-page::before {
